@@ -130,7 +130,7 @@
         ' Your code for txtbxUnitCode text changed event
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles dropYear.SelectedIndexChanged
+    Private Sub instructor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dropYear.Items.Clear()
         dropYear.Items.Add("2020/21")
         dropYear.Items.Add("2021/22")
@@ -139,7 +139,7 @@
         dropYear.Items.Add("2024/25")
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles dropSem.SelectedIndexChanged
+    Private Sub isntructor_load(sender As Object, e As EventArgs) Handles MyBase.Load
         dropSem.Items.Clear()
         dropSem.Items.Add("Semester 1")
         dropSem.Items.Add("Semester 2")
