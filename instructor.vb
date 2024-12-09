@@ -1,4 +1,7 @@
-﻿Public Class instructor
+﻿Imports System.IO
+
+Public Class instructor
+
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
         Label13.AutoSize = True
     End Sub
@@ -218,9 +221,29 @@
             MessageBox.Show("Please select a row to delete.")
         End If
     End Sub
-
     Private Sub btnSaveScript_Click(sender As Object, e As EventArgs) Handles btnSaveScript.Click
+        Dim saveFileDialog As New SaveFileDialog()
+        saveFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*"
+        saveFileDialog.Title = "Save DataGridView Data"
 
+        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            Using writer As New StreamWriter(saveFileDialog.FileName)
+                ' Write the header
+                For Each column As DataGridViewColumn In DataGridView1.Columns
+                    writer.Write(column.HeaderText & ",")
+                Next
+                writer.WriteLine()
+
+                ' Write the data
+                For Each row As DataGridViewRow In DataGridView1.Rows
+                    For Each cell As DataGridViewCell In row.Cells
+                        writer.Write(cell.Value?.ToString() & ",")
+                    Next
+                    writer.WriteLine()
+                Next
+            End Using
+            MessageBox.Show("Data saved successfully.")
+        End If
     End Sub
 End Class
 
