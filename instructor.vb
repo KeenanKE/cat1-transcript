@@ -245,5 +245,11 @@ Public Class instructor
             MessageBox.Show("Data saved successfully.")
         End If
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim studentForm As New student()
+        studentForm.Show()
+        Me.Hide()
+    End Sub
 End Class
 

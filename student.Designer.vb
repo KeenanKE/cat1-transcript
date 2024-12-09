@@ -32,6 +32,7 @@ Partial Class student
         dropYear = New ComboBox()
         dropSem = New ComboBox()
         btnGrade = New Button()
+        btnInstructor = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -125,11 +126,21 @@ Partial Class student
         btnGrade.Text = "Display Grades"
         btnGrade.UseVisualStyleBackColor = True
         ' 
+        ' btnInstructor
+        ' 
+        btnInstructor.Location = New Point(763, 573)
+        btnInstructor.Name = "btnInstructor"
+        btnInstructor.Size = New Size(167, 60)
+        btnInstructor.TabIndex = 7
+        btnInstructor.Text = "Instructor View"
+        btnInstructor.UseVisualStyleBackColor = True
+        ' 
         ' student
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(968, 645)
+        Controls.Add(btnInstructor)
         Controls.Add(btnGrade)
         Controls.Add(dropSem)
         Controls.Add(dropYear)
@@ -154,4 +165,5 @@ Partial Class student
     Friend WithEvents dropYear As ComboBox
     Friend WithEvents dropSem As ComboBox
     Friend WithEvents btnGrade As Button
+    Friend WithEvents btnInstructor As Button
 End Class
