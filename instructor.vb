@@ -227,7 +227,12 @@ Public Class instructor
         saveFileDialog.Title = "Save DataGridView Data"
 
         If saveFileDialog.ShowDialog() = DialogResult.OK Then
-            Using writer As New StreamWriter(saveFileDialog.FileName)
+            Dim filePath As String = saveFileDialog.FileName
+            If File.Exists(filePath) Then
+                File.Delete(filePath)
+            End If
+
+            Using writer As New StreamWriter(filePath)
                 ' Write the header
                 For Each column As DataGridViewColumn In DataGridView1.Columns
                     writer.Write(column.HeaderText & ",")
