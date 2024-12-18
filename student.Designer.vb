@@ -26,10 +26,6 @@ Partial Class student
         Label2 = New Label()
         Label3 = New Label()
         DataGridView1 = New DataGridView()
-        dropYear = New ComboBox()
-        dropSem = New ComboBox()
-        btnGrade = New Button()
-        btnInstructor = New Button()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
@@ -37,6 +33,10 @@ Partial Class student
         Column5 = New DataGridViewTextBoxColumn()
         Column6 = New DataGridViewTextBoxColumn()
         Column7 = New DataGridViewTextBoxColumn()
+        dropYear = New ComboBox()
+        dropSem = New ComboBox()
+        btnGrade = New Button()
+        btnInstructor = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -79,41 +79,6 @@ Partial Class student
         DataGridView1.RowHeadersWidth = 62
         DataGridView1.Size = New Size(1101, 225)
         DataGridView1.TabIndex = 3
-        ' 
-        ' dropYear
-        ' 
-        dropYear.FormattingEnabled = True
-        dropYear.Location = New Point(307, 101)
-        dropYear.Name = "dropYear"
-        dropYear.Size = New Size(228, 33)
-        dropYear.TabIndex = 4
-        ' 
-        ' dropSem
-        ' 
-        dropSem.FormattingEnabled = True
-        dropSem.Location = New Point(307, 197)
-        dropSem.Name = "dropSem"
-        dropSem.Size = New Size(228, 33)
-        dropSem.TabIndex = 5
-        ' 
-        ' btnGrade
-        ' 
-        btnGrade.Location = New Point(602, 142)
-        btnGrade.Name = "btnGrade"
-        btnGrade.RightToLeft = RightToLeft.Yes
-        btnGrade.Size = New Size(112, 34)
-        btnGrade.TabIndex = 6
-        btnGrade.Text = "Display Grades"
-        btnGrade.UseVisualStyleBackColor = True
-        ' 
-        ' btnInstructor
-        ' 
-        btnInstructor.Location = New Point(763, 573)
-        btnInstructor.Name = "btnInstructor"
-        btnInstructor.Size = New Size(167, 60)
-        btnInstructor.TabIndex = 7
-        btnInstructor.Text = "Instructor View"
-        btnInstructor.UseVisualStyleBackColor = True
         ' 
         ' Column1
         ' 
@@ -171,10 +136,50 @@ Partial Class student
         Column7.ReadOnly = True
         Column7.Width = 150
         ' 
+        ' dropYear
+        ' 
+        dropYear.FormattingEnabled = True
+        dropYear.Location = New Point(307, 101)
+        dropYear.Name = "dropYear"
+        dropYear.Size = New Size(228, 33)
+        dropYear.TabIndex = 4
+        ' 
+        ' dropSem
+        ' 
+        dropSem.FormattingEnabled = True
+        dropSem.Location = New Point(307, 197)
+        dropSem.Name = "dropSem"
+        dropSem.Size = New Size(228, 33)
+        dropSem.TabIndex = 5
+        ' 
+        ' btnGrade
+        ' 
+        btnGrade.BackColor = SystemColors.ActiveCaption
+        btnGrade.Font = New Font("Segoe UI Variable Display", 12F)
+        btnGrade.Location = New Point(602, 142)
+        btnGrade.Name = "btnGrade"
+        btnGrade.RightToLeft = RightToLeft.Yes
+        btnGrade.Size = New Size(140, 45)
+        btnGrade.TabIndex = 6
+        btnGrade.Text = "Display Grades"
+        btnGrade.UseVisualStyleBackColor = False
+        ' 
+        ' btnInstructor
+        ' 
+        btnInstructor.BackColor = SystemColors.ActiveCaption
+        btnInstructor.Font = New Font("Segoe UI Variable Display", 12F)
+        btnInstructor.Location = New Point(763, 573)
+        btnInstructor.Name = "btnInstructor"
+        btnInstructor.Size = New Size(167, 47)
+        btnInstructor.TabIndex = 7
+        btnInstructor.Text = "Instructor View"
+        btnInstructor.UseVisualStyleBackColor = False
+        ' 
         ' student
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveBorder
         ClientSize = New Size(1280, 778)
         Controls.Add(btnInstructor)
         Controls.Add(btnGrade)

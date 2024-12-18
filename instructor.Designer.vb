@@ -65,146 +65,167 @@ Partial Class instructor
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(544, 49)
+        Label1.Font = New Font("Segoe UI Variable Display", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(481, 39)
         Label1.Name = "Label1"
-        Label1.Size = New Size(137, 25)
+        Label1.Size = New Size(182, 32)
         Label1.TabIndex = 0
         Label1.Text = "Grading System"
         ' 
         ' lblRegNo
         ' 
         lblRegNo.AutoSize = True
+        lblRegNo.Font = New Font("Segoe UI Variable Display", 11F)
         lblRegNo.Location = New Point(50, 93)
         lblRegNo.Name = "lblRegNo"
-        lblRegNo.Size = New Size(79, 25)
+        lblRegNo.Size = New Size(93, 30)
         lblRegNo.TabIndex = 1
         lblRegNo.Text = "Reg. No."
         ' 
         ' lblLastName
         ' 
         lblLastName.AutoSize = True
+        lblLastName.Font = New Font("Segoe UI Variable Display", 11F)
         lblLastName.Location = New Point(50, 167)
         lblLastName.Name = "lblLastName"
-        lblLastName.Size = New Size(95, 25)
+        lblLastName.Size = New Size(114, 30)
         lblLastName.TabIndex = 2
         lblLastName.Text = "Last Name"
         ' 
         ' lblFirstName
         ' 
         lblFirstName.AutoSize = True
+        lblFirstName.Font = New Font("Segoe UI Variable Display", 11F)
         lblFirstName.Location = New Point(50, 248)
         lblFirstName.Name = "lblFirstName"
-        lblFirstName.Size = New Size(97, 25)
+        lblFirstName.Size = New Size(117, 30)
         lblFirstName.TabIndex = 3
         lblFirstName.Text = "First Name"
         ' 
         ' lblUnitCode
         ' 
         lblUnitCode.AutoSize = True
+        lblUnitCode.Font = New Font("Segoe UI Variable Display", 11F)
         lblUnitCode.Location = New Point(50, 335)
         lblUnitCode.Name = "lblUnitCode"
-        lblUnitCode.Size = New Size(91, 25)
+        lblUnitCode.Size = New Size(110, 30)
         lblUnitCode.TabIndex = 4
         lblUnitCode.Text = "Unit Code"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Variable Display", 11F)
         Label6.Location = New Point(410, 93)
         Label6.Name = "Label6"
-        Label6.Size = New Size(44, 25)
+        Label6.Size = New Size(53, 30)
         Label6.TabIndex = 5
         Label6.Text = "Year"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI Variable Display", 11F)
         Label7.Location = New Point(410, 167)
         Label7.Name = "Label7"
-        Label7.Size = New Size(85, 25)
+        Label7.Size = New Size(103, 30)
         Label7.TabIndex = 6
         Label7.Text = "Semester"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI Variable Display", 11F)
         Label8.Location = New Point(410, 248)
         Label8.Name = "Label8"
-        Label8.Size = New Size(61, 25)
+        Label8.Size = New Size(72, 30)
         Label8.TabIndex = 7
         Label8.Text = "CAT(s)"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(410, 335)
+        Label9.Font = New Font("Segoe UI Variable Display", 11F)
+        Label9.Location = New Point(390, 331)
         Label9.Name = "Label9"
-        Label9.Size = New Size(124, 25)
+        Label9.Size = New Size(149, 30)
         Label9.TabIndex = 8
         Label9.Text = "Assignment(s)"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
+        Label10.Font = New Font("Segoe UI Variable Display", 11F)
         Label10.Location = New Point(759, 93)
         Label10.Name = "Label10"
-        Label10.Size = New Size(58, 25)
+        Label10.Size = New Size(69, 30)
         Label10.TabIndex = 9
         Label10.Text = "Lab(s)"
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
+        Label11.Font = New Font("Segoe UI Variable Display", 11F)
         Label11.Location = New Point(759, 167)
         Label11.Name = "Label11"
-        Label11.Size = New Size(54, 25)
+        Label11.Size = New Size(64, 30)
         Label11.TabIndex = 10
         Label11.Text = "Exam"
         ' 
         ' btnCompute
         ' 
+        btnCompute.BackColor = SystemColors.ActiveCaption
+        btnCompute.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
         btnCompute.Location = New Point(50, 387)
         btnCompute.Name = "btnCompute"
-        btnCompute.Size = New Size(112, 67)
+        btnCompute.Size = New Size(138, 67)
         btnCompute.TabIndex = 11
         btnCompute.Text = "Compute Grade"
-        btnCompute.UseVisualStyleBackColor = True
+        btnCompute.UseVisualStyleBackColor = False
         ' 
         ' btnAdd
         ' 
+        btnAdd.BackColor = SystemColors.ActiveCaption
+        btnAdd.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
         btnAdd.Location = New Point(270, 387)
         btnAdd.Name = "btnAdd"
-        btnAdd.Size = New Size(112, 67)
+        btnAdd.Size = New Size(138, 67)
         btnAdd.TabIndex = 12
         btnAdd.Text = "Add to Transcript"
-        btnAdd.UseVisualStyleBackColor = True
+        btnAdd.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = SystemColors.ActiveCaption
+        Button3.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
         Button3.Location = New Point(520, 387)
         Button3.Name = "Button3"
-        Button3.Size = New Size(112, 67)
+        Button3.Size = New Size(138, 67)
         Button3.TabIndex = 13
         Button3.Text = "Clear All Fields"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' btnDelete
         ' 
+        btnDelete.BackColor = SystemColors.ActiveCaption
+        btnDelete.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
         btnDelete.Location = New Point(737, 387)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(112, 67)
+        btnDelete.Size = New Size(138, 67)
         btnDelete.TabIndex = 15
         btnDelete.Text = "Delete Transcript"
-        btnDelete.UseVisualStyleBackColor = True
+        btnDelete.UseVisualStyleBackColor = False
         ' 
         ' btnSaveScript
         ' 
+        btnSaveScript.BackColor = SystemColors.ActiveCaption
+        btnSaveScript.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
         btnSaveScript.Location = New Point(949, 387)
         btnSaveScript.Name = "btnSaveScript"
-        btnSaveScript.Size = New Size(112, 67)
+        btnSaveScript.Size = New Size(138, 67)
         btnSaveScript.TabIndex = 16
         btnSaveScript.Text = "Save Transcript"
-        btnSaveScript.UseVisualStyleBackColor = True
+        btnSaveScript.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
@@ -342,9 +363,10 @@ Partial Class instructor
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(860, 213)
+        Label13.Font = New Font("Segoe UI Variable Display", 11F)
+        Label13.Location = New Point(860, 204)
         Label13.Name = "Label13"
-        Label13.Size = New Size(234, 150)
+        Label13.Size = New Size(282, 180)
         Label13.TabIndex = 27
         Label13.Text = "Maximum Allowable Scores:" & vbCrLf & "CAT - 15" & vbCrLf & "Assignments - 5" & vbCrLf & "Lab - 10" & vbCrLf & "Exams - 15" & vbCrLf & "Total - 100"
         ' 
@@ -366,17 +388,20 @@ Partial Class instructor
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(1003, 40)
+        Button1.BackColor = SystemColors.ActiveCaption
+        Button1.Font = New Font("Segoe UI Emoji", 10F, FontStyle.Bold)
+        Button1.Location = New Point(977, 23)
         Button1.Name = "Button1"
-        Button1.Size = New Size(183, 34)
+        Button1.Size = New Size(209, 48)
         Button1.TabIndex = 30
         Button1.Text = "Student View"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' instructor
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveBorder
         ClientSize = New Size(1198, 713)
         Controls.Add(Button1)
         Controls.Add(dropSem)

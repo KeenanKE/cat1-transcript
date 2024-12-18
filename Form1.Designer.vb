@@ -34,20 +34,24 @@ Partial Class Form1
         ' 
         Label1.Anchor = AnchorStyles.None
         Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI Emoji", 14F, FontStyle.Bold)
+        Label1.LiveSetting = Automation.AutomationLiveSetting.Assertive
         Label1.Location = New Point(248, 52)
         Label1.Name = "Label1"
-        Label1.Size = New Size(274, 25)
+        Label1.Size = New Size(457, 37)
         Label1.TabIndex = 0
         Label1.Text = "Welcome to KCA Grading System"
         ' 
         ' btnStudent
         ' 
-        btnStudent.Location = New Point(307, 171)
+        btnStudent.BackColor = SystemColors.ActiveCaption
+        btnStudent.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        btnStudent.Location = New Point(360, 174)
         btnStudent.Name = "btnStudent"
-        btnStudent.Size = New Size(125, 33)
+        btnStudent.Size = New Size(154, 67)
         btnStudent.TabIndex = 3
         btnStudent.Text = "Student"
-        btnStudent.UseVisualStyleBackColor = True
+        btnStudent.UseVisualStyleBackColor = False
         ' 
         ' ContextMenuStrip1
         ' 
@@ -59,25 +63,30 @@ Partial Class Form1
         ' 
         Label2.Anchor = AnchorStyles.None
         Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI Emoji", 14F, FontStyle.Bold)
+        Label2.LiveSetting = Automation.AutomationLiveSetting.Assertive
         Label2.Location = New Point(330, 114)
         Label2.Name = "Label2"
-        Label2.Size = New Size(102, 25)
+        Label2.Size = New Size(167, 37)
         Label2.TabIndex = 5
         Label2.Text = "Log In as a:"
         ' 
         ' btnInstructor
         ' 
-        btnInstructor.Location = New Point(307, 245)
+        btnInstructor.BackColor = SystemColors.ActiveCaption
+        btnInstructor.Font = New Font("Segoe UI Emoji", 12F, FontStyle.Bold)
+        btnInstructor.Location = New Point(360, 246)
         btnInstructor.Name = "btnInstructor"
-        btnInstructor.Size = New Size(125, 33)
+        btnInstructor.Size = New Size(154, 67)
         btnInstructor.TabIndex = 6
         btnInstructor.Text = "Instructor"
-        btnInstructor.UseVisualStyleBackColor = True
+        btnInstructor.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveBorder
         ClientSize = New Size(800, 450)
         Controls.Add(btnInstructor)
         Controls.Add(Label2)
